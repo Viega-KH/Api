@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import TableViews
+from .views import TableViews, IndxeViews
 
 urlpatterns = [
-    path( 'info', TableViews, name='table' )
+    path( '', IndxeViews, name='index' ),
+    path( 'info', TableViews, name='table' ),
 ]
