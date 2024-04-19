@@ -1,5 +1,6 @@
 from django.db import models
-
+from django.contrib.auth.models import User
+# from simple_history.models import HistoricalRecords
 
 # ADDRESS_CHOICES = (
 #     ( 'Qibray', 'Qibray' ),
@@ -22,3 +23,5 @@ class Order(models.Model):
 
     def __srt__(self):
         return self.name
+
+
